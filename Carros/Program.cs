@@ -3,12 +3,12 @@ string modelo;
 int anoFabricacao;
 float valor;
 
-Carros[] vetor = new Carros[4];
+Carros[] vetor = new Carros[2];
 
 void AdcionarCarros()
 {
 
-    for (int i = 0; i < 4; i++)
+    for (int i = 0; i < vetor.Length; i++)
     {
 
 
@@ -21,7 +21,9 @@ void AdcionarCarros()
         Console.WriteLine("valor: ");
         valor = float.Parse(Console.ReadLine());
 
+
         Carros c1 = new(fabricante, modelo, anoFabricacao, valor);
+        c1.CriarMotor();
         vetor[i] = c1;
     }
 
@@ -35,7 +37,18 @@ void ExibirCarros(){
 
     }
 }
+void ExibirIPVAS()
+{
+    for(int i = 0; i < vetor.Length; i++)
+    {
+
+        vetor[i].CalcularIPVA();
+
+    }
+}
 
 AdcionarCarros();
-
+Console.WriteLine();
 ExibirCarros();
+Console.WriteLine();
+ExibirIPVAS();
