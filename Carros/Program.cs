@@ -42,7 +42,7 @@ void ExibirIPVAS()
     for(int i = 0; i < vetor.Length; i++)
     {
 
-        vetor[i].CalcularIPVA();
+        Console.WriteLine(vetor[i].CalcularIPVA());
 
     }
 }
