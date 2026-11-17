@@ -2,5 +2,6 @@
   <Project Path="Carros/Carros.csproj" />
   <Project Path="Ex2/Ex2.csproj" />
   <Project Path="Ex3/Ex3.csproj" />
+  <Project Path="Herança/Herança.csproj" />
   <Project Path="Orientacao_a_Objetos/Orientacao_a_Objetos.csproj" />
 </Solution>
