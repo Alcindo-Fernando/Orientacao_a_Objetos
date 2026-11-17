@@ -71,7 +71,28 @@ public class Livro
     }
 
 
+    public void CriarLivro()
+    {
+        string titulo;
+        string autor;
+        int paginas;
+        
 
-   
+        Console.Write("Digite o Titulo do Livro: ");
+        SetTitulo(Console.ReadLine());
+
+        Console.Write("Digite o nome do autor: ");
+        SetAutor(Console.ReadLine());
+
+        do
+        {
+            Console.Write("Digite o número de páginas: ");
+
+        } while (SetPaginas(int.Parse(Console.ReadLine())));
+
+
+    }
+
+
 }
 
